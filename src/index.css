@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  background: linear-gradient(lightblue, rgb(216, 216, 46), white);
 }
 
 .app-container {
@@ -13,6 +13,10 @@ body {
 h1 {
   text-align: center;
   margin-bottom: 40px;
+  color:black;
+  background-color: aliceblue;
+  font-weight: bold;
+  border: 4px dotted white;
 }
 
 .grid {
