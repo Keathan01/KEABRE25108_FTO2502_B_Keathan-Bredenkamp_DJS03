@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family:justify,sans-serif;
-  background: linear-gradient(lightblue, rgb(216, 216, 46), white);
+  background: linear-gradient(to right ,lightblue, rgb(46, 216, 193), rgba(255, 255, 255, 0.486));
 }
 
 .app-container {
