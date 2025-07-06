@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# DJS03: React Podcast Landing Page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+In this project, you will build the landing page for a podcast discovery app using **React**. Your goal is to fetch podcast data from an external API and dynamically render a **responsive grid of podcast previews**. This project focuses on **data fetching**, **component structure**, **rendering logic**, and **layout styling**.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Core Objectives
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Fetch podcast data from an API: https://podcast-api.netlify.app/ on initial page load.
+- Display a loading indicator while data is being fetched, and handle errors or empty results with a clear user message.
+- Render a responsive **grid layout** of podcast previews using modular, reusable React components.
+- Pass podcast data into components via props and render each podcast card with the following:
+  - Podcast **image**
+  - Podcast **title**
+  - Number of **seasons**
+  - Associated **genre names**
+  - Formatted **last updated** date (e.g., "2 days ago")
+- Apply clean, consistent layout and styling across different screen sizes using CSS Grid or Flexbox.
+- Maintain high-quality, readable code with clear structure and **JSDoc comments** for key functions and components.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Technical Requirements
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Use **React functional components**
+- Use the **Fetch API**
+- Use `useEffect()` to fetch data once on mount
+- Use `useState()` to manage podcast data
+- Use `.map()` to dynamically render PodcastPreviewCard components
+- Format dates using `date-fns` or a custom formatter
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Responsiveness Requirements
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Must look good on:
+  - Desktop (≥1200px)
+  - Tablet (~768px)
+  - Mobile (~375px)
+- Use **CSS Grid** or **Flexbox**
+- Media queries or frameworks like **Tailwind CSS** are allowed
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Deliverables
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Functional React Application**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  - A working React app that fetches podcast data from an external API on initial load.
+  - The app renders a grid of podcast previews using reusable components.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Loading, Error, and Empty States**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+  - A clear loading indicator is displayed while fetching data.
+  - Meaningful error or empty state messaging is shown if the fetch fails or returns no results.
 
-## Learn More
+- **Podcast Preview Card Component**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  - A reusable component that displays:
+    - Podcast image
+    - Podcast title
+    - Number of seasons
+    - Genre tags
+    - Last updated date in a human-readable format (e.g., "3 days ago")
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Responsive Layout**
 
-### Code Splitting
+  - Grid layout that adapts to mobile, tablet, and desktop screen sizes using responsive design principles.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Codebase**
+  - Clean, modular code with clearly separated components.
+  - All major functions and modules documented with **JSDoc** comments.
+  - Consistent formatting across JavaScript, JSX, HTML, and CSS files.
